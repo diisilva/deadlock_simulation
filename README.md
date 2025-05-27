@@ -65,7 +65,7 @@ Todos os testes abaixo devem ser executados com o parâmetro `--gui`. Para cada 
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 1 --gui
+python deadlock_simulation.py -n 1 --min-delay 0.5 --max-delay 1.0 --gui 
 ```
 
 **Resultado esperado no painel**  
@@ -83,7 +83,7 @@ python deadlock_simulation.py -n 1 --gui
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 2 --seed 42 --gui
+python deadlock_simulation.py -n 2 --seed 42 --min-delay 0.5 --max-delay 1.0 --gui
 ```
 
 **Resultado esperado no painel**  
@@ -101,7 +101,7 @@ python deadlock_simulation.py -n 2 --seed 42 --gui
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 2 --force-deadlock --gui
+python deadlock_simulation.py -n 2 --force-deadlock --min-delay 0.5 --max-delay 1.0 --gui
 ```
 
 **Resultado esperado no painel**  
@@ -119,7 +119,7 @@ python deadlock_simulation.py -n 2 --force-deadlock --gui
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 3 --force-deadlock --gui
+python deadlock_simulation.py -n 3 --force-deadlock --min-delay 0.5 --max-delay 1.0 --gui
 ```
 
 **Resultado esperado no painel**  
@@ -137,7 +137,7 @@ python deadlock_simulation.py -n 3 --force-deadlock --gui
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 3 --seed 7 --gui
+python deadlock_simulation.py -n 3 --seed 7 --min-delay 0.5 --max-delay 1.0 --gui
 ```
 
 **Resultado esperado no painel**  
@@ -155,7 +155,7 @@ python deadlock_simulation.py -n 3 --seed 7 --gui
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 3 --min-delay 0.2 --max-delay 0.8 --gui
+python deadlock_simulation.py -n 3 --min-delay 0.2 --max-delay 0.8 --min-delay 0.5 --max-delay 1.0 --gui
 ```
 
 **Resultado esperado no painel**  
@@ -173,7 +173,7 @@ python deadlock_simulation.py -n 3 --min-delay 0.2 --max-delay 0.8 --gui
 
 **Comando**  
 ```bash
-python deadlock_simulation.py -n 10 --force-deadlock --gui
+python deadlock_simulation.py -n 10 --force-deadlock --min-delay 0.5 --max-delay 1.0 --gui
 ```
 
 **Resultado esperado no painel**  
