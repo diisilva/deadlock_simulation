@@ -393,9 +393,15 @@ class UI:
             for i,txn in enumerate(self.txns):
                 evs = [(ts,msg) for ts,name,msg in event_queue if name==txn.name]
                 for ts,msg in evs:
-                    st = msg.split()[1]
-                    self.ax_c.barh(i, 0.1, left=ts-start_ts,
-                                   color=state_colors.get(st,'gray'))
+                    # pega o segundo token e remove pontuação final
+                    raw = msg.split()[1]
+                    state = raw.rstrip(',:')
+                    self.ax_c.barh(
+                        i,
+                        0.1,
+                        left=ts - start_ts,
+                        color=state_colors.get(state, 'gray')
+    )
 
             self.ax_c.set_yticks(range(len(self.txns)))
             self.ax_c.set_yticklabels([t.name for t in self.txns])
