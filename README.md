@@ -14,6 +14,13 @@ Embora venha com a maioria das distribuições Python, em algumas (Debian/Ubuntu
 sudo apt-get install python3-tk
 ```
 
+```bash
+pip install networkx
+```
+```bash
+pip install matplotlib
+```
+
 ## 2. Estrutura de arquivos
 
 * `deadlock_simulation.py`: código-fonte principal, com suporte a linha de comando e interface gráfica opcional (Tkinter).
